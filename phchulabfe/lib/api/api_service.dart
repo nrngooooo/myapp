@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/car.dart';  // Import the Car model
+import '../models/car.dart'; // Import the Car model
 
 class CarService {
-  static const String _baseUrl = 'http://localhost:8000/cars/';
+  static const String _baseUrl = 'http://127.0.0.1:8000/api/cars/';
 
   // Fetch car data from the API
   static Future<List<Car>> fetchCars() async {
