@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'screens/carlist.dart';
+import 'package:phchulabfe/screens/carlist.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,8 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Car App',
-      home: CarList(),
+      debugShowCheckedModeBanner: false,
+      home: CarListScreen(),
     );
   }
 }
