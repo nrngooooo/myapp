@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Medee, MedeeTurul
 
-# Register your models here.
+admin.site.register(Medee)
+admin.site.register(MedeeTurul)
