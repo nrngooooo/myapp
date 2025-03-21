@@ -6,6 +6,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false, home: HomeScreen());
@@ -13,6 +15,8 @@ class MyApp extends StatelessWidget {
 }
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -172,6 +176,8 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class DetailsScreen extends StatelessWidget {
+  const DetailsScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -194,6 +200,8 @@ class DetailsScreen extends StatelessWidget {
 }
 
 class SunScreen extends StatelessWidget {
+  const SunScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text('Sun Settings')));
@@ -201,6 +209,8 @@ class SunScreen extends StatelessWidget {
 }
 
 class SettingsScreen extends StatelessWidget {
+  const SettingsScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text('Settings')));
@@ -208,6 +218,8 @@ class SettingsScreen extends StatelessWidget {
 }
 
 class SoundScreen extends StatelessWidget {
+  const SoundScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text('Sound Settings')));
@@ -215,6 +227,8 @@ class SoundScreen extends StatelessWidget {
 }
 
 class AccessibilityScreen extends StatelessWidget {
+  const AccessibilityScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text('Accessibility Settings')));
